@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+.background {
+  background: url('background.jpg') no-repeat center center / cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.1);  /* semi-transparent glass */
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 320px;
+  backdrop-filter: blur(15px);  /* makes background behind it blurry */
+  -webkit-backdrop-filter: blur(15px); /* for Safari */
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 30px rgba(123, 66, 246, 0.6);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 35px 12px 15px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px;
+}
+
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.options a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #4b2e83;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.register {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.register a {
+  color: #fff;
+  text-decoration: underline;
+}

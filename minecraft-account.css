@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('mcbg.jpg') repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(0,0,0,0.6);
+}
+
+header h1 {
+  font-size: 2em;
+  color: #00ff99;
+  text-shadow: 0 0 8px #00ff99, 0 0 15px #00ff99;
+}
+
+.accounts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.account {
+  background: rgba(0,0,0,0.7);
+  border: 2px solid #00ff99;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px #00ff99;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.account:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ff99;
+}
+
+.account h2 {
+  font-size: 1.1em;
+  color: #00ff99;
+  margin-bottom: 10px;
+}
+
+.account p {
+  font-size: 1em;
+  color: #fff;
+  margin: 0;
+}

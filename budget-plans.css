@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #00ff99;
+  text-shadow: 0 0 8px #00ff99, 0 0 15px #00ff99;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 8px;
+}
+
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.plan {
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #00ff99;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px #00ff99;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ff99;
+}
+
+.plan h2 {
+  font-size: 1.3em;
+  color: #00ff99;
+  margin-bottom: 15px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan ul li {
+  margin: 8px 0;
+  font-size: 0.95em;
+}
